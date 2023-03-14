@@ -12,10 +12,10 @@
       </a>
     </div>
     <ul nz-menu nzTheme="dark" nzMode="inline" [nzInlineCollapsed]="isCollapsed">
-      <li nz-submenu nzOpen nzTitle="Dashboard" nzIcon="dashboard">
+      <li nz-submenu nzOpen nzTitle="系统概览" nzIcon="dashboard">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a routerLink="/welcome">Welcome</a>
+            <a routerLink="/welcome">评估页面</a>
           </li>
           <li nz-menu-item nzMatchRouter>
             <a>Monitor</a>
@@ -25,10 +25,23 @@
           </li>
         </ul>
       </li>
-      <li nz-submenu nzOpen nzTitle="Form" nzIcon="form">
+      <li nz-submenu nzOpen nzTitle="数据源" nzIcon="form">
         <ul>
           <li nz-menu-item nzMatchRouter>
-            <a>Basic Form</a>
+            <a>连接器管理</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>数据源管理</a>
+          </li>
+        </ul>
+      </li>
+      <li nz-submenu nzOpen nzTitle="数据引擎" nzIcon="form">
+        <ul>
+          <li nz-menu-item nzMatchRouter>
+            <a>流处理</a>
+          </li>
+          <li nz-menu-item nzMatchRouter>
+            <a>批处理</a>
           </li>
         </ul>
       </li>

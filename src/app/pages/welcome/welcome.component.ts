@@ -6,6 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.less']
 })
 export class WelcomeComponent implements OnInit {
+  
+  doProcess() {
+    console.log(this.value)
+  }
+
+  value?: string;
 
   constructor() { }
 

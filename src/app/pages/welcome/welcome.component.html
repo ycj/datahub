@@ -1,1 +1,5 @@
-<button nz-button nzType="primary">Primary</button>
+
+<nz-space>
+    <input *nzSpaceItem nz-input placeholder="Basic usage" [(ngModel)]="value" />
+    <button *nzSpaceItem nz-button nzType="primary" (click)="doProcess()">主按钮</button>
+</nz-space>
