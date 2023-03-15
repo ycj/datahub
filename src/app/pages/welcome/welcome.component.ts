@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
+import { DemoService } from 'src/app/demo.service';
 
 @Component({
   selector: 'app-welcome',
@@ -8,10 +9,12 @@ import { Component, OnInit } from '@angular/core';
 export class WelcomeComponent implements OnInit {
   
   doProcess() {
-    console.log(this.value)
+    this.demo.log()
   }
 
   value?: string;
+
+  demo = inject(DemoService)
 
   constructor() { }
 
