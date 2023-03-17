@@ -14,12 +14,20 @@ import { IconsProviderModule } from './icons-provider.module';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { StreamComponent } from './pages/stream/stream.component';
+import { BatchComponent } from './pages/batch/batch.component';
+import { DataSourceComponent } from './pages/datasource/datasource.component';
+import { UdfComponent } from './pages/udf/udf.component';
 
 registerLocaleData(zh);
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StreamComponent,
+    BatchComponent,
+    DataSourceComponent,
+    UdfComponent
   ],
   imports: [
     BrowserModule,
