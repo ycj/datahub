@@ -1,1 +1,32 @@
-<p>udf works!</p>
+<nz-page-header>
+    <nz-page-header-title>自定义函数</nz-page-header-title>
+    <nz-page-header-extra>
+        <nz-space>
+            <button *nzSpaceItem nz-button nzType="primary" nzSize="small">新建</button>
+            <button *nzSpaceItem nz-button nzType="default" nzSize="small">导入</button>
+            <button *nzSpaceItem nz-button nzType="default" nzSize="small">导出</button>
+        </nz-space>
+    </nz-page-header-extra>
+</nz-page-header>
+<nz-table #basicTable [nzData]="listOfData">
+    <thead>
+      <tr>
+        <th>名称</th>
+        <th>大小</th>
+        <th>功能说明</th>
+        <th>操作</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of basicTable.data">
+        <td>{{ data.name }}</td>
+        <td>{{ data.age }}</td>
+        <td>{{ data.address }}</td>
+        <td>
+          <a>Action 一 {{ data.name }}</a>
+          <nz-divider nzType="vertical"></nz-divider>
+          <a>Delete</a>
+        </td>
+      </tr>
+    </tbody>
+</nz-table>

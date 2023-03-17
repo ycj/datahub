@@ -17,21 +17,21 @@
         <span>系统概览</span>
       </li>
       <li nz-menu-item nzMatchRouter routerLink="/datasource">
-        <span nz-icon nzType="form"></span>
+        <span nz-icon nzType="api" nzTheme="outline"></span>
         <span>数据源</span>
       </li>
       <li nz-submenu nzOpen nzTitle="数据处理" nzIcon="form">
         <ul>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/stream">流处理</a>
+          <li nz-menu-item nzMatchRouter routerLink="/stream">
+            <span nz-icon nzType="node-expand" nzTheme="outline"></span><span>流处理</span>
           </li>
-          <li nz-menu-item nzMatchRouter>
-            <a routerLink="/batch">批处理</a>
+          <li nz-menu-item nzMatchRouter routerLink="/batch">
+            <span nz-icon nzType="paper-clip" nzTheme="outline"></span><span>批处理</span>
           </li>
         </ul>
       </li>
       <li nz-menu-item nzMatchRouter routerLink="/udf">
-        <span nz-icon nzType="form"></span>
+        <span nz-icon nzType="build" nzTheme="outline"></span>
         <span>自定义函数</span>
       </li>
     </ul>
