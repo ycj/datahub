@@ -20,7 +20,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzInputModule } from 'ng-zorro-antd/input';
 
-import * as AllIcons from '@ant-design/icons-angular/icons';
+// import * as AllIcons from '@ant-design/icons-angular/icons';
 
 import { StreamComponent } from './pages/stream/stream.component';
 import { BatchComponent } from './pages/batch/batch.component';
@@ -30,11 +30,11 @@ import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 
-const antDesignIcons = AllIcons as {
-  [key: string]: IconDefinition;
-};
+// const antDesignIcons = AllIcons as {
+//   [key: string]: IconDefinition;
+// };
 
-const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key]);
+// const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key]);
 
 registerLocaleData(zh);
 
@@ -63,7 +63,7 @@ registerLocaleData(zh);
     NzTableModule,
     FormsModule,
     NzInputModule,
-    NzIconModule.forRoot(icons),
+    NzIconModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN }
