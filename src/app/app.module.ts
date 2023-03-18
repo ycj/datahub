@@ -11,7 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { IconsProviderModule } from './icons-provider.module';
-import { IconDefinition } from '@ant-design/icons-angular';
+
+//ng-zorro-antd
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzMenuModule } from 'ng-zorro-antd/menu';
 import { NzIconModule } from 'ng-zorro-antd/icon';
@@ -19,22 +20,18 @@ import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzTableModule } from 'ng-zorro-antd/table';
 import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
 
-// import * as AllIcons from '@ant-design/icons-angular/icons';
-
+//页面组件
 import { StreamComponent } from './pages/stream/stream.component';
 import { BatchComponent } from './pages/batch/batch.component';
 import { DataSourceComponent } from './pages/datasource/datasource.component';
 import { UdfComponent } from './pages/udf/udf.component';
-import { NzSpaceModule } from 'ng-zorro-antd/space';
-import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
-
-// const antDesignIcons = AllIcons as {
-//   [key: string]: IconDefinition;
-// };
-
-// const icons: IconDefinition[] = Object.keys(antDesignIcons).map(key => antDesignIcons[key]);
+import { DriversComponent } from './pages/drivers/drivers.component';
+import { InfoComponent } from './pages/info/info.component';
 
 registerLocaleData(zh);
 
@@ -46,6 +43,8 @@ registerLocaleData(zh);
     DataSourceComponent,
     UdfComponent,
     WelcomeComponent,
+    DriversComponent,
+    InfoComponent,
   ],
   imports: [
     BrowserModule,
@@ -64,6 +63,7 @@ registerLocaleData(zh);
     FormsModule,
     NzInputModule,
     NzIconModule,
+    NzDropDownModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN }

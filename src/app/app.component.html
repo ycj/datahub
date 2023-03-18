@@ -34,6 +34,16 @@
         <span nz-icon nzType="build" nzTheme="outline"></span>
         <span>自定义函数</span>
       </li>
+      <li nz-submenu  nzOpen nzTitle="系统设置" nzIcon="setting">
+        <ul>
+          <li nz-menu-item nzMatchRouter routerLink="/drivers">
+            <span nz-icon nzType="appstore" nzTheme="outline"></span><span>连接器</span>
+          </li>
+          <li nz-menu-item nzMatchRouter routerLink="/info">
+            <span nz-icon nzType="info-circle" nzTheme="outline"></span><span>系统信息</span>
+          </li>
+        </ul>
+      </li>
     </ul>
   </nz-sider>
   <nz-layout>
