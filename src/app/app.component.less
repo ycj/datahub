@@ -16,16 +16,11 @@
   box-shadow: 2px 0 6px rgba(0,21,41,.35);
 }
 
-.header-trigger {
-  height: 64px;
-  padding: 20px 24px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: all .3s,padding 0s;
+.header-right {
+  padding: 0px 24px;
 }
 
-.header-right {
-  float: right;
+.header-trigger {
   height: 64px;
   padding: 20px 24px;
   font-size: 20px;
@@ -71,7 +66,9 @@ nz-header {
 }
 
 .app-header {
-  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 64px;
   padding: 0;
   background: #fff;
@@ -86,4 +83,8 @@ nz-content {
   padding: 24px;
   background: #fff;
   height: 100%;
+}
+
+.user-name {
+  padding: 0px 5px;
 }

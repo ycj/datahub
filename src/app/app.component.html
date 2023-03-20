@@ -49,32 +49,35 @@
   <nz-layout>
     <nz-header>
       <div class="app-header">
-        <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
-            <span class="trigger"
-               nz-icon
-               [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-            ></span>
-        </span>
+        <div class="header-left">
+          <span class="header-trigger" (click)="isCollapsed = !isCollapsed">
+              <span class="trigger"
+                nz-icon
+                [nzType]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+              ></span>
+          </span>
+        </div>
+        <div class="header-right">
+          <a class="ant-dropdown-link" nz-dropdown [nzDropdownMenu]="menu">
+            <nz-avatar nzIcon="user" style="background-color:#2f6bda;"></nz-avatar>
+            <span class="user-name">管理员</span>
+          </a>
+          <nz-dropdown-menu #menu="nzDropdownMenu">
+            <ul nz-menu>
+              <li nz-menu-item>
+                <a href="abc">个人中心</a>
+              </li>
+              <li nz-menu-item>
+                <a href="abc">个人设置</a>
+              </li>
+              <li nz-menu-item>
+                <a href="abc">退出登录</a>
+              </li>
+            </ul>
+          </nz-dropdown-menu>
+        </div>
       </div>
-      <div class="header-right">
-        <nz-dropdown>
-          <div class="ant-dropdown-link" nz-dropdown>
-            <nz-avatar nzIcon="user" nzSize="small"></nz-avatar>
-            <span class="user-name">admin</span>
-          </div>
-          <ul nz-menu>
-            <li nz-menu-item>
-              <a href="abc">个人中心</a>
-            </li>
-            <li nz-menu-item>
-              <a href="abc">个人设置</a>
-            </li>
-            <li nz-menu-item>
-              <a href="abc">退出登录</a>
-            </li>
-          </ul>
-        </nz-dropdown>
-      </div>
+
     </nz-header>
     <nz-content>
       <div class="inner-content">

@@ -23,6 +23,7 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzDropDownModule } from 'ng-zorro-antd/dropdown';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 
 //页面组件
 import { StreamComponent } from './pages/stream/stream.component';
@@ -64,6 +65,7 @@ registerLocaleData(zh);
     NzInputModule,
     NzIconModule,
     NzDropDownModule,
+    NzAvatarModule,
   ],
   providers: [
     { provide: NZ_I18N, useValue: zh_CN }

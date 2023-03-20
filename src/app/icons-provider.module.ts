@@ -12,6 +12,7 @@ import {
   SettingOutline,
   AppstoreOutline,
   InfoCircleOutline,
+  UserOutline
 } from '@ant-design/icons-angular/icons';
 
 const icons = [
@@ -25,6 +26,7 @@ const icons = [
   SettingOutline,
   AppstoreOutline,
   InfoCircleOutline,
+  UserOutline,
 ];
 
 @NgModule({
