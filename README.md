@@ -28,4 +28,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## 里程碑
 
-* 主菜单
+## 特别备注说明
+
+* 评估Angular可用性
+* 已经完成任务目标
